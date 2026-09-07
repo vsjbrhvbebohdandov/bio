@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nanaook // bio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+        }
+
+        body {
+            background-color: #0b0e14;
+            color: #e0e6ed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 380px;
+            background: #121722;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.15);
+        }
+
+        /* Шапка з картинкою */
+        .banner {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            background: #1a1f2c;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8) contrast(1.1);
+        }
+
+        .banner-text {
+            position: absolute;
+            bottom: 12px;
+            left: 15px;
+            color: #ffffff;
+            font-size: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 4px 8px;
+            border-radius: 4px;
+            backdrop-filter: blur(4px);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        /* Головна плашка-статус */
+        .status-box {
+            background: linear-gradient(90deg, #2a1b28 0%, #1a162b 100%);
+            border-left: 3px solid #d459a3;
+            color: #f7a8db;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Список посилань */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #1a202c;
+            padding: 12px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .link-btn:hover {
+            background: #252d3d;
+            border-color: #d459a3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 89, 163, 0.2);
+        }
+
+        .link-title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .link-action {
+            font-size: 12px;
+            color: #7b8a9e;
+            transition: color 0.3s;
+        }
+
+        .link-btn:hover .link-action {
+            color: #d459a3;
+        }
+
+        /* Нижня пунктирна лінія */
+        .divider {
+            color: #556070;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Аватар / Банер -->
+        <div class="banner">
+            <img src="https://picsum.photos/400/200" alt="Banner">
+            <div class="banner-text">nanaook // main bio</div>
+        </div>
+
+        <div class="content">
+            <!-- Статус -->
+            <div class="status-box">
+                <span>portfolio & socials</span>
+            </div>
+
+            <!-- Посилання -->
+            <div class="links-container">
+                
+                <!-- 1. Portfolio VERSACE -->
+                <a href="https://vsjbrhvbebohdandov.github.io/VERSACE/" target="_blank" class="link-btn">
+                    <span class="link-title">VERSACE Portfolio</span>
+                    <span class="link-action">open ↗</span>
+                </a>
+
+                <!-- 2. Telegram -->
+                <a href="https://t.me/nanaook" target="_blank" class="link-btn">
+                    <span class="link-title">Telegram (@nanaook)</span>
+                    <span class="link-action">write ↗</span>
+                </a>
+
+                <!-- 3. TikTok -->
+                <a href="https://www.tiktok.com/@raizik_27?_r=1&_t=ZS-99Xa4HFWNiq" target="_blank" class="link-btn">
+                    <span class="link-title">TikTok (@raizik_27)</span>
+                    <span class="link-action">watch ↗</span>
+                </a>
+
+            </div>
+
+            <div class="divider">-------------------------</div>
+        </div>
+    </div>
+
+</body>
+</html>
